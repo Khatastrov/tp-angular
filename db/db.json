@@ -1,0 +1,28 @@
+{
+  "players": [
+    {
+      "id": 2,
+      "name": "Simone",
+      "number": 69,
+      "role": "demie",
+      "team": "Chevaliers du Zodiac",
+      "hurt": false
+    },
+    {
+      "id": 3,
+      "name": "Zezette",
+      "number": 51,
+      "role": "arrière",
+      "team": "Cavaliers de l'apocalypse",
+      "hurt": false
+    },
+    {
+      "id": 4,
+      "name": "Eddie",
+      "number": 22,
+      "role": "tireur",
+      "team": "Cavaliers de l'apocalypse",
+      "hurt": false
+    }
+  ]
+}
