@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'TP';
+  message: string | null = null;
+
+  alert(event) {
+    console.log(event.target);
+    this.message = "la cagnotte de " + event + " a bien été modifiée ! 😊"
+
+    setTimeout(() => {
+      this.message = null;
+    }, 2000)
+  }
 }

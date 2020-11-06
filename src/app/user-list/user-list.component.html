@@ -1,0 +1,19 @@
+<p>user-list works!</p>
+
+<div class="card m-5 text- w-50" *ngFor="let user of users">
+    <p class="card-header">{{ user.name }} {{ user.firstname }}
+    <p>
+    <p class="card-body">Total de la cagnotte : {{ user.wallet | number }} € </p>
+    <div class="card-footer">
+        <button class="btn btn-success mr-5"
+                (click)="recalcWallet(user, 'add')">
+            ajouter 10€ à la cagnotte 💰
+        </button>
+        <button class="btn btn-danger"
+                (click)="recalcWallet(user, 'remove')">
+            retirer 10€ de la cagnotte 💸
+        </button>
+    </div>
+</div>
+
+<hr>

@@ -1,1 +1,25 @@
-<p>player-form works!</p>
+<form [formGroup]="playerForm" (ngSubmit)="onSubmit()" >
+    <h2>Formulaire joueur :</h2>
+
+    <label>
+        Nom :
+        <input type="text" formControlName="name">
+    </label>
+    <label>
+        Numéro :
+        <input type="number" formControlName="number">
+    </label>
+    <label>
+        Equipe :
+        <input type="text" formControlName="team">
+    </label>
+    <label>
+        Est blessé : 
+        <input type="radio" formControlName="hurt" value="false" id="non">
+        <label for="non">Non</label>
+        <input type="radio" formControlName="hurt" value="true" id="oui">
+        <label for="oui">Oui</label>
+    </label>
+
+    <button type="submit">Enregistrer</button>
+</form>

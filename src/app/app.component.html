@@ -1,1 +1,8 @@
-<app-player-manager></app-player-manager>
+<h1>app component</h1>
+
+<div *ngIf="message" class="alert alert-primary"
+     role="alert">
+    {{ message }}
+</div>
+
+<app-user-list (onChange)="alert($event)"></app-user-list>

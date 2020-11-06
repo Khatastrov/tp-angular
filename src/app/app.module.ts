@@ -8,6 +8,8 @@ import { FilterComponent } from './filter/filter.component';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { PlayerComponent } from './player/player.component';
 import { PlayerFormComponent } from './player-form/player-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,14 @@ import { PlayerFormComponent } from './player-form/player-form.component';
     PlayerListComponent,
     PlayerComponent,
     PlayerFormComponent,
+    UserListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
